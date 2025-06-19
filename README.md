@@ -49,7 +49,7 @@ A Retrieval-Augmented Generation (RAG) agent that:
 2. **Run the agent**:
 
    ```bash
-   python meta2.py
+   python meta-agent.py
    ```
 
    Follow the prompt to ask philosophical questions (or type `exit`).
@@ -62,7 +62,7 @@ A Retrieval-Augmented Generation (RAG) agent that:
 ├── data/                # Input PDF files
 ├── build_chroma_db.py   # Builds the local Chroma DB
 ├── chroma_db/           # Persisted vector store
-├── meta2.py             # Interactive Philosophy RAG agent
+├── meta-agent.py        # Interactive Philosophy RAG agent
 ├── .env                 # OPENAI_API_KEY
 ├── requirements.txt     # Python dependencies
 └── README.md            # This file

@@ -11,10 +11,10 @@ A Retrieval-Augmented Generation (RAG) agent that:
 
 ## Files
 
-- **build\_chroma\_db.py**:\
+- **build\_chroma.py**:\
   Reads `.pdf` files from `data/`, chunks them, embeds with OpenAI embeddings, and persists a Chroma database in `chroma_db/`.
 
-- **meta-agent.py**:\
+- **meta\_agent.py**:\
   Loads the Chroma store, sets up a `RetrievalQA` chain and a LangGraph loop, then starts an interactive REPL.\
   For each question:
 
@@ -41,7 +41,7 @@ A Retrieval-Augmented Generation (RAG) agent that:
 1. **Build the vector store**:
 
    ```bash
-   python build_chroma_db.py
+   python build_chroma.py
    ```
 
    Chunks all PDFs in `data/` and persists embeddings in `chroma_db/`.
@@ -49,7 +49,7 @@ A Retrieval-Augmented Generation (RAG) agent that:
 2. **Run the agent**:
 
    ```bash
-   python meta-agent.py
+   python meta_agent.py
    ```
 
    Follow the prompt to ask philosophical questions (or type `exit`).
@@ -60,9 +60,9 @@ A Retrieval-Augmented Generation (RAG) agent that:
 
 ```plaintext
 ├── data/                # Input PDF files
-├── build_chroma_db.py   # Builds the local Chroma DB
+├── build_chroma.py   # Builds the local Chroma DB
 ├── chroma_db/           # Persisted vector store
-├── meta-agent.py        # Interactive Philosophy RAG agent
+├── meta_agent.py             # Interactive Philosophy RAG agent
 ├── .env                 # OPENAI_API_KEY
 ├── requirements.txt     # Python dependencies
 └── README.md            # This file
@@ -72,5 +72,5 @@ A Retrieval-Augmented Generation (RAG) agent that:
 
 ## License
 
-MIT © Your Name
+MIT © Ayush Girish Godbole
 

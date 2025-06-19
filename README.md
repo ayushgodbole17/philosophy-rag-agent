@@ -14,7 +14,7 @@ A Retrieval-Augmented Generation (RAG) agent that:
 - **build\_chroma\_db.py**:\
   Reads `.pdf` files from `data/`, chunks them, embeds with OpenAI embeddings, and persists a Chroma database in `chroma_db/`.
 
-- **meta2.py**:\
+- **meta-agent.py**:\
   Loads the Chroma store, sets up a `RetrievalQA` chain and a LangGraph loop, then starts an interactive REPL.\
   For each question:
 

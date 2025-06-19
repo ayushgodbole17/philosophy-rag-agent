@@ -60,9 +60,9 @@ A Retrieval-Augmented Generation (RAG) agent that:
 
 ```plaintext
 ├── data/                # Input PDF files
-├── build_chroma.py   # Builds the local Chroma DB
+├── build_chroma.py      # Builds the local Chroma DB
 ├── chroma_db/           # Persisted vector store
-├── meta_agent.py             # Interactive Philosophy RAG agent
+├── meta_agent.py        # Interactive Philosophy RAG agent
 ├── .env                 # OPENAI_API_KEY
 ├── requirements.txt     # Python dependencies
 └── README.md            # This file
